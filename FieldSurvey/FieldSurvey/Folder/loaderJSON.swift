@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ObservationEventsJSONLoader
+class JSONLoader
 {
     class func load(fileName: String) -> [ClassEvent]
     {
