@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var myTableView: UITableView!
     
-    let fieldSurvey = JSONLoader.load(fileName: "field_observations.json")
+    let fieldSurvey = JSONLoader.load(fileName: "field_observations")
     
     let date = DateFormatter()
     
@@ -51,6 +51,9 @@ class ViewController: UIViewController {
         
         return cell
     }
+    
+    
+
 
     /*
     // MARK: - Navigation

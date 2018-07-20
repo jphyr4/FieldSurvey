@@ -14,9 +14,30 @@ class ObservationViewController: UIViewController {
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     
+    var fieldSurveys: ClassEvent?
+    
+    var dates = DateFormatter()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Observation"
+        
+        dates.timeStyle = .medium
+        dates.timeStyle = .medium
+        
+        observationImageView.image = fieldSurveys?.classification.image
+        
+        label1.text = fieldSurveys?.title
+        
+        if let date = fieldSurveys?.date{
+            label2.text = dates.string(from: date)
+        } else{
+            label2.text = ""
+            
+        }
+
 
         // Do any additional setup after loading the view.
     }

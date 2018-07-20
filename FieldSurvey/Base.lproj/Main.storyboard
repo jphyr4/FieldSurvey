@@ -52,7 +52,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="myImageView" destination="ar9-c4-lXc" id="csy-eI-tNp"/>
-                                            <segue destination="LAk-3h-2Bd" kind="show" id="P4B-10-5F2"/>
+                                            <segue destination="LAk-3h-2Bd" kind="show" id="czW-l9-cU0"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
